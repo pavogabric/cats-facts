@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Xanh Mono", monospace;
+  line-height: 1.5;
+  font-size: 50%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1d3557;
+  color: #f1faee;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.container {
+  width: 90%;
+  max-width: 1280px;
+  min-height: 90vh;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container h1 {
+  color: #457b9d;
+  padding-bottom: 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-bottom: 2px solid rgba(69, 123, 157, 0.25);
+  font-size: 4.2rem;
+}
+
+.container .fact {
+  font-size: 3.2rem;
+  padding: 2rem 0;
+}
+
+.container button {
+  background: #457b9d;
+  padding: 2.4rem 4.8rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border: none;
+  font-family: inherit;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: #f1faee;
+  cursor: pointer;
+  -webkit-transition: all 100ms;
+  transition: all 100ms;
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.25);
+  outline: none;
+}
+
+.container button:hover, .container button:focus {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
+}
+
+.container button:active {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html {
+    font-size: 62.5%;
+  }
+}
